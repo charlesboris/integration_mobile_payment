@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Effectuer un don</h1>
+<br><br>
+<br><br>
+<Span><strong>Veuillez saisir le montant de votre don</strong></span>
+<br><br>
+<input type="text" id="don" name="don" placeholder="Saisissez un montant" onkeypress="isInputNumber(event)">
+<br><br>
+<input type="submit" id="paiement" value="Paiement">
+</body>
+ <script>            
+            function isInputNumber(evt){            
+                var ch = String.fromCharCode(evt.which);               
+                if(!(/[0-9]/.test(ch))){
+                    evt.preventDefault();
+                }              
+            }           
+        </script>
+</html>
